@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- HEAD -->
+
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-60221565-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-60221565-1");
+    </script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      property="og:site_name"
+      content="Jarrett Allen Young // Web Developer"
+    />
+    <meta property="og:url" content="https://jarrettallenyoung.com" />
+    <meta property="og:title" content="Jarrett Allen Young // Web Developer" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:description"
+      content="Portfolio of Jarrett Allen Young // Web Developer"
+    />
+    <meta
+      property="og:image"
+      content="assets/images/web-developer-wallpaper2.jpg"
+    />
+    <meta
+      property="og:image:secure_url"
+      content="assets/images/web-developer-wallpaper2.jpg"
+    />
+
+    <!-- FAVICON -->
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="assets/icons/favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="assets/icons/favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="assets/icons/favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="assets/icons/favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="assets/icons/favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="assets/icons/favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="assets/icons/favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="assets/icons/favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/icons/favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="assets/icons/favicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/icons/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="assets/icons/favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/icons/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/icons/favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="assets/icons/favicon/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
+
+    <title>Jarrett Allen Young // Web Developer</title>
+    <link rel="icon" href="assets/icons/favicon/favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/scripts/app.js"></script>
+
+    <!-- SCROLL TO DIV ON CLICK -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+      $(function () {
+        $("a[href*=\\#]:not([href=\\#])").on("click", function () {
+          var target = $(this.hash);
+          target = target.length
+            ? target
+            : $("[name=" + this.hash.substr(1) + "]");
+          if (target.length) {
+            $("html,body").animate(
+              {
+                scrollTop: target.offset().top,
+              },
+              800
+            );
+            return false;
+          }
+        });
+      });
+    </script>
+
+    <!-- ANIMATE ON SCROLL (AOS) -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      $(function () {
+        AOS.init();
+      });
+    </script>
+  </head>
+
+  <!-- BODY -->
+
+  <body>
+    <div class="navbar sticky-top navbar-expand-lg navbar-light bg-white">
+      <a class="navbar-brand" href="#top">Jarrett Allen Young</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="assets/resources/JarrettAllenYoung_Digital_Resume2.pdf"
+              target="_blank"
+              >resume</a
+            >
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#about">about</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- INTRO -->
+
+    <section
+      class="section--panel"
+      style="
+        background-image: url('assets/images/web-developer-wallpaper2.jpg');
+      "
+      id="top"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <div
+              class="d-flex flex-column justify-content-center bg-vh-full py-5"
+              data-aos="fade-up"
+              data-aos-duration="2000"
+            >
+              <h1 class="display-2 text-white" style="text-align: center">
+                Jarrett Allen Young
+              </h1>
+              <h5
+                class="text-white"
+                style="text-align: center; font-weight: 100"
+              >
+                Web Developer // West Coast, United States
+              </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+
+    <section class="bg-vh-half pt-5 pt-lg-8 pb-5 pb-lg-8" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-offset-2 col-md-4"></div>
+          <div
+            class="col-12 col-md-6 pt-2"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
+            <h5>Full (LAMP) stack web developer.</h5>
+            <h6>
+              Frontend specialist, Bootstrap master, JavaScript ninja.<br />Backend
+              technician, Python apprentice.<br />AWS practitioner, cloud
+              security novice.<br />WordPress veteran, WooCommerce wizard.<br />Advanced
+              Adobe Creative Suite user, SEO ace.<br />Passionate about web
+              development and learning new skills and technologies.
+            </h6>
+
+            <h1 style="font-size: 3rem">Education</h1>
+            <h4>Santa Monica College</h4>
+            <a
+              style="font-weight: bold"
+              href="https://www.smc.edu/academics/areas-of-interest/stem/csis/computer-science.php"
+              target="_blank"
+              >Computer Science</a
+            >
+            <p><i>2018 // present</i></p>
+
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="https://www.smc.edu/student-support/academic-support/transfer-center/areas-of-study/documents/Associate_Degrees/computer_science_as.pdf#page=8"
+                  target="_blank"
+                  >Entry-Level Programmer // Department Certificate // 2020</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.smc.edu/academics/academic-departments/csis/cloud-computing.php"
+                  target="_blank"
+                  >Cloud Computing (AWS) // Department Certificate // 2020</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.smc.edu/academics/areas-of-interest/stem/csis/cybersecurity.php"
+                  target="_blank"
+                  >Cybersecurity // Department Certificate // in progress</a
+                >
+              </li>
+            </ul>
+
+            <h4>California State University, Northridge</h4>
+            <a
+              style="font-weight: bold"
+              href="https://www.csun.edu/humanities/english"
+              target="_blank"
+              >English Literature // Bachelor of Arts</a
+            >
+            <p><i>Graduated 2005</i></p>
+          </div>
+          <div class="col-12 col-md-offset-2 col-md-4"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+
+    <section class="bg-vh-half pt-5 pt-lg-8 pb-5 pb-lg-8" id="portfolio">
+      <div class="container">
+        <h1 style="text-align: center; font-size: 4.5rem">Portfolio</h1>
+      </div>
+
+      <!-- TOP TIER TRAVEL -->
+    </section>
+    <section
+      class="section--panel bg-vh-full py-4 py-lg-6 d-flex align-items-center"
+      id="top-tier-travel"
+    >
+      <style>
+        #top-tier-travel {
+          background-image: url("assets/images/top-tier-travel-wallpaper1.jpg");
+        }
+        #top-tier-travel:before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          height: 100%;
+          width: 100%;
+          background: #d1d1d142;
+        }
+      </style>
+      <div class="container" data-aos="fade-up" data-aos-duration="2000">
+        <div class="row">
+          <div
+            class="offset-1 col-10 col-lg-7 col-xl-6 p-5 bg-dark-transparent"
+          >
+            <h1 class="display-3">Top Tier Travel</h1>
+
+            <h2 class="h5">Project Highlights:</h2>
+
+            <ul>
+              <li><p>Custom theme configuration using WordPress CMS</p></li>
+              <li>
+                <p>
+                  Extensive theme editing and metafield configurations (CMS) for
+                  ease of store management
+                </p>
+              </li>
+              <li><p>Search Engine Optimization (SEO)</p></li>
+              <li><p>Custom form creation</p></li>
+              <li>
+                <p>
+                  Advanced metafields configurations for travel detail pages
+                </p>
+              </li>
+              <li><p>Image resizing</p></li>
+            </ul>
+
+            <a href="https://toptiertravel.com/" target="_blank"
+              >View Site
+              <img src="assets/icons/icon-exit.png" alt="Exit" class="icon"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DFW PIANO GALLERY -->
+
+    <section
+      class="bg-vh-full pt-7 pt-lg-10 pb-5 pb-lg-10 d-flex align-items-center"
+      id="dfw-piano-gallery"
+      data-aos="fade-up"
+      data-aos-duration="2000"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-10 offset-1 col-lg-6 offset-lg-0 p-md-2 p-lg-5">
+            <h1 class="display-3 d-block d-lg-none">DFW Piano Gallery</h1>
+
+            <div
+              class="my-4 my-lg-0 frame frame--1x1"
+              style="
+                background-image: url('assets/images/dfw-piano-gallery-wallpaper1.jpg');
+              "
+            ></div>
+          </div>
+          <div
+            class="col-10 offset-1 col-lg-6 offset-lg-0 p-md-2 p-lg-5 d-flex flex-column justify-content-center"
+          >
+            <h1 class="display-3 d-none d-lg-block">DFW Piano Gallery</h1>
+
+            <h2 class="h5">Project Highlights:</h2>
+            <ul>
+              <li><p>Custom theme configuration using WordPress CMS</p></li>
+              <li>
+                <p>
+                  Extensive theme editing and metafield configurations (CMS) for
+                  ease of site management
+                </p>
+              </li>
+              <li><p>Search Engine Optimization (SEO)</p></li>
+              <li><p>Custom form creation</p></li>
+              <li>
+                <p>
+                  Advanced metafields configurations for product detail pages
+                </p>
+              </li>
+              <li><p>Image resizing</p></li>
+              <li><p>Custom blog with merchandisable posts</p></li>
+            </ul>
+
+            <a href="http://dfwpianogallery.com/" target="_blank"
+              >View Site
+              <img src="assets/icons/icon-exit.png" alt="Exit" class="icon"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SILVERLAKE WINE -->
+
+    <section
+      class="section--panel bg-vh-full py-4 py-lg-6 d-flex align-items-center"
+      id="silverlake-wine"
+    >
+      <style>
+        #silverlake-wine {
+          background-image: url("assets/images/silverlake-wine-wallpaper1.jpg");
+        }
+        #silverlake-wine:before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          height: 100%;
+          width: 100%;
+          background: #d1d1d142;
+        }
+      </style>
+      <div class="container" data-aos="fade-up" data-aos-duration="2000">
+        <div class="row">
+          <div
+            class="offset-1 col-10 col-lg-7 col-xl-6 p-5 bg-dark-transparent"
+          >
+            <h1 class="display-3">Silverlake Wine</h1>
+
+            <h2 class="h5">Project Highlights:</h2>
+
+            <ul>
+              <li><p>Advanced custom CSS</p></li>
+
+              <li><p>Bootstrap responsive development</p></li>
+
+              <li><p>Periodic site maintenance</p></li>
+            </ul>
+
+            <a href="https://www.silverlakewine.com/" target="_blank"
+              >View Site
+              <img src="assets/icons/icon-exit.png" alt="Exit" class="icon"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NITRO CIRCUS -->
+
+    <section
+      class="bg-vh-full pt-7 pt-lg-10 pb-5 pb-lg-10 d-flex align-items-center"
+      id="nitro-circus"
+      data-aos="fade-up"
+      data-aos-duration="2000"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-10 offset-1 col-lg-6 offset-lg-0 p-md-2 p-lg-5">
+            <h1 class="display-3 d-block d-lg-none">Nitro Circus</h1>
+
+            <div
+              class="my-4 my-lg-0 frame frame--1x1"
+              style="
+                background-image: url('assets/images/nitro-circus-wallpaper4.jpg');
+              "
+            ></div>
+          </div>
+          <div
+            class="col-10 offset-1 col-lg-6 offset-lg-0 p-md-2 p-lg-5 d-flex flex-column justify-content-center"
+          >
+            <h1 class="display-3 d-none d-lg-block">Nitro Circus</h1>
+
+            <h2 class="h5">Project Highlights:</h2>
+            <ul>
+              <li><p>Custom CSS</p></li>
+
+              <li>
+                <p>
+                  Advanced metafields configurations for product detail page
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  Extensive theme editor and metafield configurations (CMS) for
+                  ease of store management
+                </p>
+              </li>
+
+              <li><p>Customizable promo blocks on product listing pages</p></li>
+            </ul>
+
+            <a href="https://nitrocircus.com/" target="_blank"
+              >View Site
+              <img src="assets/icons/icon-exit.png" alt="Exit" class="icon"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SAINT ARCHER BREWERY -->
+
+    <section
+      class="section--panel bg-vh-full py-4 py-lg-6 d-flex align-items-center"
+      id="saint-archer-brewery"
+    >
+      <style>
+        #saint-archer-brewery {
+          background-image: url("assets/images/saint-archer-brewery-wallpaper1.jpg");
+        }
+        #saint-archer-brewery:before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          height: 100%;
+          width: 100%;
+          background: #d1d1d142;
+        }
+      </style>
+      <div class="container" data-aos="fade-up" data-aos-duration="2000">
+        <div class="row">
+          <div
+            class="offset-1 col-10 col-lg-7 col-xl-6 p-5 bg-dark-transparent"
+          >
+            <h1 class="display-3">Saint Archer Brewery</h1>
+
+            <h2 class="h5">Project Highlights:</h2>
+
+            <ul>
+              <li><p>Custom CSS</p></li>
+
+              <li>
+                <p>
+                  Advanced metafields configurations for product-level details
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  Extensive theme editor and metafield configurations (CMS) for
+                  ease of store management
+                </p>
+              </li>
+            </ul>
+
+            <a href="https://www.saintarcherbrewery.com/" target="_blank"
+              >View Site
+              <img src="assets/icons/icon-exit.png" alt="Exit" class="icon"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEEN CANCER AMERICA -->
+
+    <section
+      class="bg-vh-full pt-7 pt-lg-10 pb-5 pb-lg-10 d-flex align-items-center"
+      id="teen-cancer-america"
+      data-aos="fade-up"
+      data-aos-duration="2000"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-10 offset-1 col-lg-6 offset-lg-0 p-md-2 p-lg-5">
+            <h1 class="display-3 d-block d-lg-none">Teen Cancer America</h1>
+
+            <div
+              class="my-4 my-lg-0 frame frame--1x1"
+              style="
+                background-image: url('assets/images/teen-cancer-america-wallpaper1.png');
+              "
+            ></div>
+          </div>
+          <div
+            class="col-10 offset-1 col-lg-6 offset-lg-0 p-md-2 p-lg-5 d-flex flex-column justify-content-center"
+          >
+            <h1 class="display-3 d-none d-lg-block">Teen Cancer America</h1>
+
+            <h2 class="h5">Project Highlights:</h2>
+            <ul>
+              <li><p>Custom CSS</p></li>
+
+              <li>
+                <p>
+                  Advanced metafields configurations for product-level details
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  Extensive theme editor and metafield configurations (CMS) for
+                  ease of store management
+                </p>
+              </li>
+            </ul>
+
+            <a href="https://teencanceramerica.org/" target="_blank"
+              >View Site
+              <img src="assets/icons/icon-exit.png" alt="Exit" class="icon"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GOOD HYOUMAN -->
+
+    <section
+      class="section--panel bg-vh-full py-4 py-lg-6 d-flex align-items-center"
+      id="good-hyouman"
+    >
+      <style>
+        #good-hyouman {
+          background-image: url("assets/images/good-hyouman-wallpaper2.jpeg");
+        }
+        #good-hyouman:before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          height: 100%;
+          width: 100%;
+          background: #d1d1d142;
+        }
+      </style>
+      <div class="container" data-aos="fade-up" data-aos-duration="2000">
+        <div class="row">
+          <div
+            class="offset-1 col-10 col-lg-7 col-xl-6 p-5 bg-dark-transparent"
+          >
+            <h1 class="display-3">Good hYOUman</h1>
+
+            <h2 class="h5">Project Highlights:</h2>
+
+            <ul>
+              <li><p>Custom CSS</p></li>
+
+              <li>
+                <p>
+                  Extensive theme editor and metafield configurations (CMS) for
+                  ease of store management
+                </p>
+              </li>
+            </ul>
+
+            <a href="https://goodhyouman.com/" target="_blank"
+              >View Site
+              <img src="assets/icons/icon-exit.png" alt="Exit" class="icon"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COLOURS WHEELCHAIR -->
+
+    <section
+      class="bg-vh-full pt-7 pt-lg-10 pb-5 pb-lg-10 d-flex align-items-center"
+      id="colours-wheelchair"
+      data-aos="fade-up"
+      data-aos-duration="2000"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-10 offset-1 col-lg-6 offset-lg-0 p-md-2 p-lg-5">
+            <h1 class="display-3 d-block d-lg-none">Colours Wheelchair</h1>
+
+            <div
+              class="my-4 my-lg-0 frame frame--1x1"
+              style="
+                background-image: url('assets/images/colours-wheelchair-wallpaper1-resize.png');
+              "
+            ></div>
+          </div>
+          <div
+            class="col-10 offset-1 col-lg-6 offset-lg-0 p-md-2 p-lg-5 d-flex flex-column justify-content-center"
+          >
+            <h1 class="display-3 d-none d-lg-block">Colours Wheelchair</h1>
+
+            <h2 class="h5">Project Highlights:</h2>
+            <ul>
+              <li><p>Custom theme configuration using WordPress CMS</p></li>
+
+              <li>
+                <p>
+                  Extensive theme editing and metafield configurations (CMS) for
+                  ease of store management
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  Advanced metafields configurations for product-level details
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  Custom ability to handle large catalog taxonomies on category
+                  and product listing pages
+                </p>
+              </li>
+
+              <li><p>Search Engine Optimization (SEO)</p></li>
+
+              <li><p>Custom form creation</p></li>
+
+              <li>
+                <p>
+                  Advanced metafields configurations for product detail pages
+                </p>
+              </li>
+
+              <li><p>Image resizing</p></li>
+            </ul>
+
+            <a href="http://colourswheelchair.com/" target="_blank"
+              >View Site
+              <img src="assets/icons/icon-exit.png" alt="Exit" class="icon"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MORRIS & YOUNG -->
+
+    <section
+      class="section--panel bg-vh-full py-4 py-lg-6 d-flex align-items-center"
+      id="morris-young"
+    >
+      <style>
+        #morris-young {
+          background-image: url("assets/images/morris-young-wallpaper6.jpeg");
+        }
+        #morris-young:before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          height: 100%;
+          width: 100%;
+          background: #d1d1d142;
+        }
+      </style>
+      <div class="container" data-aos="fade-up" data-aos-duration="2000">
+        <div class="row">
+          <div
+            class="offset-1 col-10 col-lg-7 col-xl-6 p-5 bg-dark-transparent"
+          >
+            <h1 class="display-3">Morris & Young</h1>
+
+            <h2 class="h5">Project Highlights:</h2>
+
+            <ul>
+              <li><p>Complete site redesign and development</p></li>
+
+              <li><p>Custom lightweight landing page</p></li>
+
+              <li><p>Search Engine Optimization (SEO)</p></li>
+
+              <li><p>Image resizing</p></li>
+            </ul>
+
+            <a href="http://morris-young.com/" target="_blank"
+              >View Site
+              <img src="assets/icons/icon-exit.png" alt="Exit" class="icon"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+
+    <section
+      class="bg-vh-contact pt-10 pb-10 d-flex align-items-center bg-dark"
+      id="contact"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="text-white">Contact</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-4 mb-3 mb-lg-0">
+            <h2 class="h5 text-white">Email:</h2>
+            <a class="display-5 text-white">young.jarrett@gmail.com</a>
+          </div>
+          <div class="col-12 col-md-4 mb-3 mb-lg-0">
+            <h2 class="h5 text-white">LinkedIn:</h2>
+            <a
+              class="display-5 text-white"
+              href="https://www.linkedin.com/in/jarrettyoung"
+              target="_blank"
+              >linkedin.com/in/JarrettYoung</a
+            >
+          </div>
+          <div class="col-12 col-md-4 mb-3 mb-lg-0">
+            <h2 class="h5 text-white">Github:</h2>
+            <a
+              class="display-5 text-white"
+              href="https://github.com/JarrettAllenYoung"
+              target="_blank"
+              >github.com/JarrettAllenYoung</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
